@@ -30,16 +30,17 @@ function coincidencias(arr) {
 }
 //Para encontrar las coincidencias en el array de intereses
 function coincidenciasIntereses(arr) {
-    var a = [],
+    let a = [],
       b = [],
-      prev;
+      prev = '';
   
     arr.sort();
     for (var i = 0; i < arr.length; i++) {
-      if (arr[i].toLowerCase() !== prev) {
+      if (arr[i].toLowerCase() !== prev.toLowerCase()) {
         a.push(arr[i].toLowerCase());
         b.push(1);
       } else {
+        console.log('son iguales');
         b[b.length - 1]++;
       }
       prev = arr[i];

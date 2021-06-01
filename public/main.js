@@ -39,6 +39,7 @@ let formularioFinal;
 
 //Para obtener el boton de Whatsapp de html
 let botonWhatsapp;
+var linkWa;
 
 // FUNCIÓN DE PRECARGA DE LOS RECURSOS
 function preload() {
@@ -52,9 +53,6 @@ function preload() {
   // FUNCIÓN DE CONFIGURACIÓN
   function setup() {
     const myCanvas=createCanvas(0, 0);
-    //const myCanvas=createCanvas(windowWidth, windowHeight);
-    //myCanvas.parent('canvasDiv');
-    //var context=canvas.getContext('2d');
     preload();
     loadVideo();
     textoPorcentaje = select('#textoPorcentaje');
@@ -75,17 +73,14 @@ function preload() {
     formularioFinal.hide();
     botonWhatsapp = select('#btnWhatsapp');
     botonWhatsapp.hide();
+    linkWa = document.getElementById('btnWhatsapp')
   }
   
   
   function loadVideo(){
     // Se inicia la reproducción del video
-    //video.size(1280, 720);
     video.show();
     video.showControls(); 
-    //video.parent('defaultCanvas0');
-    //video.aspectRatio('16:9');
-    //video.center();
   }
   
   function draw() {
@@ -184,6 +179,7 @@ function preload() {
         formularioFinal.show();
         formularioFinal.style("z-index: 10");
         formularioFinal.center('vertical');
+        linkWa.href= "https://api.whatsapp.com/send?text=%C2%A1Hola%21%20Te%20comparto%20este%20video%20interactivo%2C%20obtuve%20un%20puntaje%20de%20"+porcentajeCandidatura+"%25%20%C2%BFcu%C3%A1nto%20sacaste%20t%C3%BA%3F%3A%20https%3A%2F%2Fmulti-lab.vercel.app%2F"
         botonWhatsapp.show();
       }
     }

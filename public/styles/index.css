@@ -7,6 +7,18 @@ body {
   margin:0;
 }
 
+.scratch{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7%;
+  padding-bottom: 3%;
+  text-align: center;
+  zoom: 1.4;
+  -moz-transform: scale(1.4);
+}
+
 .bg {
   animation:slide 13s ease-in-out infinite alternate;
   background-image: linear-gradient(-60deg, #0a4886 50%, #1d8bf8 50%);
@@ -41,8 +53,8 @@ body {
 *{padding: 0; margin: 0; box-sizing: border-box;}
 body{height: 900px;}
 header {
-	background: url('https://scontent.fclo3-1.fna.fbcdn.net/v/t1.6435-9/67241605_838241459881627_1566588629726265344_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=e3f864&_nc_ohc=N8OItPGDb6wAX8uEF0n&_nc_oc=AQmofaXGJ_fxWM5nJ-HjXdQ-iJAsP8B8skbZ4sSesodJ4-tXXmlyVNIhKeo8ZHtwReY&_nc_ht=scontent.fclo3-1.fna&oh=c4dba8f1f9960e08b5e0b2f106f59e0d&oe=60D980C0');
-  background-position: 0% 60%; /*posicion de la img del header*/
+	background: url('https://pbs.twimg.com/media/DGt49wgVYAA1Qai.png');
+  background-position: 0% 200%; /*posicion de la img del header*/
 	text-align: center;
 	width: 100%;
 	height: auto;
@@ -57,7 +69,7 @@ header .overlay{
 	height: 100%;
 	padding: 50px;
 	color: #FFF;
-	text-shadow: 1px 1px 1px #333;
+	text-shadow: 2px 3px 3px #333;
   background-image: linear-gradient( 135deg, #9f05ff3b 10%, #fd5e0831 60%);
 }
 
@@ -69,6 +81,7 @@ h1 {
 
 h3, p {
 	font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
 	margin-bottom: 30px;
 }
 
@@ -165,6 +178,8 @@ button:hover {
 .wa:hover {
   opacity: 0.7;
   }
+
+
 
 /*css de las preguntas orientadoras*/
 .datos{
